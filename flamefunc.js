@@ -1,7 +1,7 @@
 function flamefunc(n1, n2) {
 
-    let name1 = "akshay".split("")
-    let name2 = "nikhil".split("")
+    let name1 = n1.split("")
+    let name2 = n2.split("")
     let flame = "flame"
     let m = new Map()
 
