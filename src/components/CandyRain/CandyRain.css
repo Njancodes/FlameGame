@@ -1,0 +1,3 @@
+canvas {
+  pointer-events: none; /* by default, ignore mouse events */
+}

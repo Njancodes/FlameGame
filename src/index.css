@@ -1,0 +1,16 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background: linear-gradient(135deg, #ffe4ec, #fff6d5, #d5faff, #ffd6f9);
+  animation: pastelFlow 12s ease infinite;
+}
+
+
+/* Flowing pastel background animation */
+@keyframes pastelFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

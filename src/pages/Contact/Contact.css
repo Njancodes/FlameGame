@@ -1,0 +1,101 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  color: #3E2723;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+/* Headings */
+.contact-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px #ffd1dc;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  color: #ff6fa5;
+  text-shadow: 1px 1px 4px #ffe0f0;
+}
+
+.contact-container h3 {
+  margin-top: 0.2rem;
+  color: #6f42c1;
+  text-shadow: 1px 1px 3px #e2c1ff;
+}
+
+/* Form */
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(145deg, #f1c36684, #d25cd685);
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs and textarea */
+.contact-container input,
+.contact-container textarea {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid #fcd5e1;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 3px 6px rgba(255, 182, 193, 0.2);
+  background: linear-gradient(145deg, #ffe0f0, #c1f0f6, #fef3c7, #e2c1ff);
+  transition: all 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #ff6fa5;
+  box-shadow: 0 0 10px #ffd1dc;
+}
+
+/* Labels */
+.contact-container label {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  display: block;
+  color: #ff3e70;
+}
+
+/* Submit button */
+.contact-container button {
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ffc1e3, #ff9de3, #c1f0f6, #e2c1ff);
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15), inset 0 2px 4px rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-container button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: linear-gradient(145deg, #ffdeed, #ffc1e3, #c1f0f6, #e2c1ff);
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+}
+
+/* Contact details section */
+.contact-container section p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #3E2723;
+}
+
+.contact-container section {
+  margin-top: 2rem;
+}

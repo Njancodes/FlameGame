@@ -1,0 +1,80 @@
+* {
+  z-index: 1;
+}
+
+body{
+  margin: 0 0 0 0;
+}
+
+/* Navbar wrapper */
+.navbar {
+  background: linear-gradient(135deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff);
+  padding: 16px 32px;
+  border-radius: 80px;
+  margin: auto;
+  margin-top: 1rem;
+  width: fit-content;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.4);
+  border: 3px solid #f873ff;
+  animation: candyShimmer 8s linear infinite;
+}
+
+/* Shimmer candy effect */
+@keyframes candyShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Candy bubble links */
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 40px;
+  background: linear-gradient(145deg, #ff6fa5, #ff3e70);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glossy shine overlay */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.nav-links a:hover::after {
+  left: 125%;
+}
+
+.nav-links a:hover {
+  transform: scale(1.15) rotate(-2deg);
+  background: linear-gradient(145deg, #ff9ec4, #ff6fa5);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5);
+}
+
+/* Squish press on click */
+.nav-links a:active {
+  transform: scale(0.95);
+}
+  

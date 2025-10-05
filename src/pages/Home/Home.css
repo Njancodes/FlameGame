@@ -1,0 +1,82 @@
+/* Container with a candy pastel background */
+.home-container {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 400% 400%;
+}
+
+/* Candy title */
+.home-title {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff6fa5, #ff3e70, #ffb347, #ff9ec4);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 20px;
+  animation: bouncePop 2s infinite;
+  border-radius: 16px;
+}
+
+/* Cozy text */
+.home-text {
+  font-size: 1.2rem;
+  color: #5c3d2e;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.4);
+}
+
+/* Glossy candy button */
+.home-button {
+  background: linear-gradient(145deg, #ffc8dc, #fa6e93);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(255, 105, 180, 0.4),
+              inset 0 2px 4px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glossy shine effect */
+.home-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.home-button:hover::after {
+  left: 125%;
+}
+
+.home-button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: linear-gradient(145deg, #ff9ec4, #ff6fa5);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.6);
+}
+
+.home-button:active {
+  transform: scale(0.95);
+}
